@@ -5,7 +5,7 @@ This project uses a [pre-trained GPT2 model](https://huggingface.co/gpt2), which
 
 ### Fine-tuning a custom model
 
-You can fine-tune your own model using Google Colab [![Open In Colab](/home/titan/Coding/personal_website/images/colab-badge.svg)](https://colab.research.google.com/drive/1dEZL9YR-RuV6gZ2EtDbMWLS6RC8VZTlu?usp=sharing)
+You can fine-tune your own model using Google Colab [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1dEZL9YR-RuV6gZ2EtDbMWLS6RC8VZTlu?usp=sharing)
 
 ### Setup
 
