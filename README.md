@@ -17,7 +17,7 @@ pip install --upgrade pip setuptools
 pip install -r requirements.txt
 ```
 
-Start app (on the first run, the app will download the model from Hugging Face's Model Hub):
+Start the app (on the first run, the app will download the pre-trained model from Hugging Face's Model Hub or you can supply your custom model by adjusting the load_model() function to your local, standard PyTorch model directory path):
 ```
 streamlit run app.py
 ```
