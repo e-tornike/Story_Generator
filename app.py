@@ -183,7 +183,8 @@ def load_page(state: _SessionState, model: TextGenerationPipeline):
                 f'<p style="font-family:Courier;text-align:center;">{line}</p>',
                 unsafe_allow_html=True,
             )
-
+    
+    st.markdown("---")
     st.markdown(
         "_You can read about how to create your own story generator application [here](https://towardsdatascience.com/rick-and-morty-story-generation-with-gpt2-using-transformers-and-streamlit-in-57-lines-of-code-8f81a8f92692). The code for this project is on [Github](https://github.com/e-tony/Story_Generator_RnM)._"
     )
