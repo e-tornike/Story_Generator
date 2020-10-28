@@ -11,7 +11,6 @@ except ModuleNotFoundError:
 
 
 class _SessionState:
-
     def __init__(self, session, hash_funcs):
         """Initialize SessionState instance."""
         self.__dict__["_state"] = {
@@ -31,7 +30,7 @@ class _SessionState:
     def __getitem__(self, item):
         """Return a saved state value, None if item is undefined."""
         return self._state["data"].get(item, None)
-        
+
     def __getattr__(self, item):
         """Return a saved state value, None if item is undefined."""
         return self._state["data"].get(item, None)
@@ -43,12 +42,12 @@ class _SessionState:
     def __setattr__(self, item, value):
         """Set state value."""
         self._state["data"][item] = value
-    
+
     def clear(self):
         """Clear session state and request a rerun."""
         self._state["data"].clear()
         self._state["session"].request_rerun()
-    
+
     def sync(self):
         """Rerun the app with all state values up to date from the beginning to fix rollbacks."""
 
@@ -58,9 +57,11 @@ class _SessionState:
         # Example: state.value += 1
         if self._state["is_rerun"]:
             self._state["is_rerun"] = False
-        
+
         elif self._state["hash"] is not None:
-            if self._state["hash"] != self._state["hasher"].to_bytes(self._state["data"], None):
+            if self._state["hash"] != self._state["hasher"].to_bytes(
+                self._state["data"], None
+            ):
                 self._state["is_rerun"] = True
                 self._state["session"].request_rerun()
 
@@ -73,7 +74,7 @@ def _get_session():
 
     if session_info is None:
         raise RuntimeError("Couldn't get your Streamlit Session object.")
-    
+
     return session_info.session
 
 
