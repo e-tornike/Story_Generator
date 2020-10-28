@@ -145,7 +145,7 @@ def load_page(state: _SessionState, model: TextGenerationPipeline):
         st.stop()
 
     button_generate = st.button("Generate Story (burps)")
-    if st.button("Rest Prompt (Random)"):
+    if st.button("Reset Prompt (Random)"):
         state.clear()
 
     if button_generate:
