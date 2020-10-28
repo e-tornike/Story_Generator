@@ -9,9 +9,9 @@ You can fine-tune your own model using Google Colab [![Open In Colab](https://co
 
 ### Setup
 
-Install dependencies in a virtual environment:
+This repository has only been test with Python 3.7. Install dependencies in a virtual environment:
 ```
-python3 -m venv venv
+python3.7 -m venv venv
 source venv/bin/activate
 pip install --upgrade pip setuptools
 pip install -r requirements.txt
