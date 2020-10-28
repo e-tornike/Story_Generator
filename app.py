@@ -95,7 +95,7 @@ def load_page(state: _SessionState, model: TextGenerationPipeline):
     __Ethical considerations__:
 
     The original GPT2 model was trained on WebText, which contains 45 million outbound links from Reddit (i.e. websites that comments reference).
-    While certain domains were removed, the model was trained on largely unfiltered content from the internet, which contains biased and discriminating language.
+    While certain domains were removed, the model was trained on largely unfiltered content from the Internet, which contains biased and discriminating language.
     
     __[Model Card](https://github.com/openai/gpt-2/blob/master/model_card.md) (by OpenAI)__:
 
