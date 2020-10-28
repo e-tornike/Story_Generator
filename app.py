@@ -27,7 +27,7 @@ BAD_WORDS = load_bad_words()
 
 STARTERS = {
     0: "Rick: Morty, quick! Get in the car!\nMorty: Oh no, I can't do it Rick! Please not this again.\nRick: You don't have a choice! The crystal demons are going to eat you if you don't get in!",
-    1: "Elon: Oh, you think you're all that Rick? Fight me in a game of space squash!\nRick: Let's go, you wanna-be crazy genius!\nElon: SpaceX fleet, line up!",
+    1: "Elon: Oh, you think you're all that Rick? Fight me in a game of space squash!\nRick: Let's go, you wanna-be genius!\nElon: SpaceX fleet, line up!",
     2: "Morty: I love Jessica, I want us to get married on Octopulon 300 and have octopus babies.\nRick: Shut up, Morty! You're not going to Octopulon 300!",
     3: "Rick: Hey there, Jerry! What a nice day for taking these anti-gravity shoes for a spin!\nJerry: Wow, Rick! You would let me try out one of your crazy gadgets?\nRick: Of course, Jerry! That's how much I respect you.",
     4: "Rick: Come on, flip the pickle, Morty. You're not gonna regret it. The payoff is huge.",
