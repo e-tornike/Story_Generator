@@ -19,7 +19,7 @@ pip install --upgrade pip setuptools
 pip install -r requirements.txt
 ```
 
-On the first run, the app will download the pre-trained model from Hugging Face's Model Hub or you can supply your own custom model by in the `load_model()` function. To start the application, simply run:
+On the first run, the app will download the pre-trained model from Hugging Face's Model Hub or you can supply your own custom model in the `load_model()` function. To start the application, simply run:
 ```
 streamlit run app.py
 ```
