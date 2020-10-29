@@ -9,7 +9,7 @@ You can fine-tune your own model using Google Colab [![Open In Colab](https://co
 
 ### Setup
 
-This repository has only been test with Python 3.7. 
+This repository has only been tested with Python 3.7. 
 
 Install the dependencies in a virtual environment:
 ```
