@@ -134,7 +134,7 @@ def load_page(state: _SessionState, model: TextGenerationPipeline):
     )
 
     state.slider = st.slider(
-        "Max story length in characters (longer scripts will take more time to generate):",
+        "Max story length (longer scripts will take more time to generate):",
         50,
         1000,
         state.slider,
