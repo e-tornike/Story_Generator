@@ -7,7 +7,7 @@ import streamlit as st
 from SessionState import _SessionState, _get_session, _get_state
 
 
-device = torch.device("cpu")
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 
 def load_bad_words() -> list:
