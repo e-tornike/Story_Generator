@@ -1,4 +1,6 @@
 # Rick and Morty Story Generator
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/e-tony/story_generator/main/app.py)
+
 This project uses a [pre-trained GPT2 model](https://huggingface.co/gpt2), which was fine-tuned on [Rick and Morty transcripts](https://rickandmorty.fandom.com/wiki/Category:Transcripts), to generate new stories in the form of a dialog. The project uses Hugging Face's [Transformers library](https://github.com/huggingface/transformers) to do inference and [Streamlit](https://www.streamlit.io/) for the application. 
 
 Try out the [demo](https://share.streamlit.io/e-tony/story_generator/main/app.py) to generate fun stories or read the blog [post](https://towardsdatascience.com/rick-and-morty-story-generation-with-gpt2-using-transformers-and-streamlit-in-57-lines-of-code-8f81a8f92692) on how to create your won story generator.
