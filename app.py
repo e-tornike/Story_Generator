@@ -13,12 +13,15 @@ device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 def load_bad_words() -> list:
     res_list = []
 
-    file = urllib.request.urlopen(
-        "https://raw.githubusercontent.com/RobertJGabriel/Google-profanity-words/master/list.txt"
-    )
-    for line in file:
-        dline = line.decode("utf-8")
-        res_list.append(dline.split("\n")[0])
+    try:
+        file = urllib.request.urlopen(
+            "https://raw.githubusercontent.com/RobertJGabriel/Google-profanity-words/master/list.txt"
+        )
+        for line in file:
+            dline = line.decode("utf-8")
+            res_list.append(dline.split("\n")[0])
+    except:
+        logging.info("Failed to load bad words list.")
 
     return res_list
 
@@ -117,7 +120,7 @@ def load_page(state: _SessionState, model: TextGenerationPipeline):
 
     __Tech stack__:
 
-    This website was built using [Streamlit](https://www.streamlit.io/) and uses the [Transformers](https://huggingface.co/transformers/) framework to generate text.
+    This website was built using [Streamlit](https://www.streamlit.io/) and uses the [Transformers](https://huggingface.co/transformers/) library to generate text.
     """
     st.markdown(disclaimer_short)
     st.sidebar.markdown(disclaimer_long)
