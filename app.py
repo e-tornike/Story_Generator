@@ -5,6 +5,7 @@ from transformers import pipeline, set_seed
 from transformers.pipelines import TextGenerationPipeline
 import streamlit as st
 from SessionState import _SessionState, _get_session, _get_state
+import logging
 
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
