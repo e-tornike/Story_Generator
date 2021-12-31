@@ -16,7 +16,7 @@ def load_bad_words() -> list:
 
     try:
         file = urllib.request.urlopen(
-            "https://raw.githubusercontent.com/RobertJGabriel/Google-profanity-words/master/list.txt"
+            "https://raw.githubusercontent.com/coffee-and-fun/google-profanity-words/main/data/list.txt"
         )
         for line in file:
             dline = line.decode("utf-8")
